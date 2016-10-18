@@ -1,0 +1,145 @@
+/* Popup */
+.body{
+    width: 400px;
+    height: 150px;
+    padding: 10px;
+}
+/* Checkbox PopUp */
+.flatRoundedCheckbox
+{
+    width: 100px;
+    height: 40px;
+    margin: 20px 50px;
+    position: relative;
+}
+.flatRoundedCheckbox div
+{
+    width: 100%;
+    height:100%;
+    background: #d3d3d3;
+    border-radius: 50px;
+    position: relative;
+    top:-30px;
+}
+.flatRoundedCheckbox label
+{
+    display: block;
+    width: 30px;
+    height: 25px;
+    border-radius: 50px;
+
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+
+    cursor: pointer;
+    position: absolute;
+    top: -2px;
+    z-index: 1;
+    left: 8px;
+    background: #FFF;
+}
+.flatRoundedCheckbox input[type=checkbox]:checked ~ div
+{
+    background: #4fbe79;
+}
+
+.flatRoundedCheckbox input[type=checkbox]:checked ~ label {
+    left: 85px;
+}
+
+/* The Button */
+.trelabels-btn.active { background: rgba(0, 0, 0, 0.1); }
+
+.trelabels-btn.active:hover { background: rgba(0, 0, 0, 0.2); }
+
+/* The Pop-Over */
+.pop-over-list li>a.active { background-color: #eee; }
+
+.pop-over-list li>a.active:hover { background-color: #298fca; }
+
+/* The Tags Style */
+.trelabels-tag .list-card-labels { margin: 0; }
+
+.trelabels-tag .list-card-labels .card-label {
+  height: inherit;
+  line-height: 1;
+  width: inherit;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin: 0 2px 3px 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+/* TreLabels */
+/* The Lines Style */
+.trelabels-line .list-card-labels { margin: 0; }
+
+.trelabels-line .list-card-labels .card-label {
+  float: none;
+  display: block;
+  height: inherit;
+  line-height: 1;
+  width: inherit;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin: 0 0 3px 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+/* The Stickers Style */
+.trelabels-sticker .list-card-labels .card-label {
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+}
+
+/* The Tabs Style */
+.trelabels-tab .list-card-labels {
+  margin: 0;
+  top: -6px;
+}
+
+.trelabels-tab .list-card-labels .card-label {
+  border-radius: 0 0 5px 5px;
+  height: 5px;
+  width: 20px;
+}
+/* Scrum */
+.scrum-light{opacity:0.7;font-size:90%}
+.scrum-list-total{position:absolute;top:6px;right:29px;display:inline-block;padding:2px;background:#e3e3e3;border-radius:3px;color:#666;line-height:1em}
+.scrum-list-progress{position:absolute;top:0;left:0;height:100%;background:#379e5a;opacity:0.3;z-index:0}
+.scrum-card-progress{position:absolute;top:0;left:0;height:100%;background:#379e5a;opacity:0.2;z-index:-1}
+.scrum-card-progress.overrun{color:#5C001C}
+.scrum-card-project{display:inline-block;padding:2px 3px;color:#fff;font-size:10px;line-height:1;vertical-align:2px;border-radius:3px}
+.scrum-card-points{position:absolute;top:0;right:3px;display:inline-block;padding:2px;line-height:1em;vertical-align:middle;border-radius:3px;color:#555;font-size:12px;text-shadow:0 0 2px white;opacity:0.6}
+.scrum-card-points.overrun{color:#5C001C}
+.scrum-card-points.perfect{color:#274D01}
+.list-card.scrum-card-header{text-align:center;background:transparent;border:0;font-size:150%;line-height:1.3em}
+.js-open-agilescrum-menu .icon-add:before{content:"\e621"}
+
+/* Project */
+.project {
+    background-color: #006580 !important;
+    border-color: #005b72 !important;
+    border-bottom-color: #004b5f !important;
+    color: #e1fafb !important;
+    float: right;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: right;
+    background-repeat: no-repeat !important;
+    background-position: 3px 3px !important;
+    padding: 0 4px!important;
+}
+
+.project:empty {
+    display: none;
+}
+
+/* The Tabs Style */

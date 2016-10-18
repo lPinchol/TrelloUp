@@ -1,0 +1,42 @@
+{
+  "manifest_version": 2,
+
+  "name": "Trello Up for Trello",
+  "short_name": "Trello Up",
+  "description": "Extension para aumentar las funcionalidades de Trello",
+  "version": "1.0",
+  "author": "Antonio Mateo (Moon Pincho)",
+  "icons": {
+    "16": "src/icon16.png",
+    "48": "src/icon48.png",
+    "128": "src/icon128.png"
+  },
+  "browser_action": {
+    "default_icon": "src/icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Trello Up Opciones"
+  },
+  "background":{
+    "page": "src/background.html"
+  },
+  "permissions": [
+    "activeTab",
+    "notifications",
+    "storage",
+    "tabs",
+    "http://*/*", "https://*/*",
+    "cookies",
+    "https://trello.com/*"
+  ],
+  "web_accessible_resources":[
+    "src/icon48.png"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://trello.com/*", "https://trello.com/b/*"],
+      "js": ["jquery.js", "trelloup.js"],
+      "css": ["trelloup.css"],
+      "run_at": "document_end"
+    }
+  ]
+}
